@@ -1,53 +1,54 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANORA - Official Website</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    
 
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
   <body>
     <header class="header" style="z-index: 1001">
-      <a href="#" class="logo"
-        ><img
-          src="./images/image.jpg"
-          alt="Company Logo"
-          style="width: 150px; height: 100px; border-radius: 4px"
-      /></a>
+      <a href="#" class="logo">
+        <img src="./images/image.jpg" alt="Company Logo" style="width: 150px; height: 100px; border-radius: 4px" />
+      </a>
       <div class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          
-          <li><a href="#contact">Contact</a></li>
-          
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <section id="home" class="home">
       <div class="overlay"></div>
-      <h1 style="z-index: 1000">PLANORA – Your Event, Perfectly Planned</h1>
-      <h2 style="margin-top: 10px; z-index: 1000">
-       Turning Moments into Memories!
-      </h2>
-      <div style="z-index: 1000" class="wave wave1"></div>
-      <div style="z-index: 1000" class="wave wave2"></div>
-      <div style="z-index: 1000" class="wave wave3"></div>
+      <h1 class="display-4" style="z-index: 1000">PLANORA – Your Event, Perfectly Planned</h1>
+      <h2 class="lead" style="margin-top: 10px; z-index: 1000">Turning Moments into Memories!</h2>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
     </section>
 
     <section class="about" id="about" style="min-height: 35vh">
-      <h1 class="heading">About Us</h1>
+      <h1 class="heading text-center">About Us</h1>
       <div class="row">
-        <div class="content">
-          <h3>Platform Where Customer Can Easily Connect With Event Organising Vendors</h3>
+        <div class="col-lg-6 col-md-12">
+          <h3>Platform Where Customer Can Easily Connect With Event Organizing Vendors</h3>
           <p>
-            Welcome to Planora, your all-in-one platform for seamless event planning! At Planora, we believe that every event, big or small, deserves to be perfectly organized and stress-free. Whether you're planning a wedding, birthday party, or corporate event, Planora helps you streamline the process and turn your vision into reality with ease
+            Welcome to Planora, your all-in-one platform for seamless event planning! At Planora, we believe that every event, big or small, deserves to be perfectly organized and stress-free. Whether you're planning a wedding, birthday party, or corporate event, Planora helps you streamline the process and turn your vision into reality with ease.
           </p>
         </div>
       </div>
@@ -57,46 +58,34 @@
       <div class="container">
         <div class="row">
           <div class="section-head col-sm-12" id="service">
-             <h1>Our Services</h1>
+            <h1>Our Services</h1>
             <p>
-             At Planora, we offer a comprehensive suite of services to make your event planning experience smooth and hassle-free. Whether you're organizing a wedding, corporate event, or birthday celebration, our platform is designed to bring your event vision to life. Explore the services we provide:
+              At Planora, we offer a comprehensive suite of services to make your event planning experience smooth and hassle-free. Whether you're organizing a wedding, corporate event, or birthday celebration, our platform is designed to bring your event vision to life. Explore the services we provide:
             </p>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
-              <span class="icon feature_box_col_one"
-                ><i class="fa fa-link"></i
-              ></span>
-              <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Vendor Connections
-              </h6>
-              <p style="font-family: &quot;Poppins&quot;, sans-serif">
+              <span class="icon feature_box_col_one"><i class="fa fa-link"></i></span>
+              <h6>Vendor Connections</h6>
+              <p>
                 Easily browse and connect with a wide range of vendors, from caterers and decorators to photographers and DJs. Our curated list ensures you only find the best in the business, tailored to meet your event needs.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
-              <span class="icon feature_box_col_two"
-                ><i class="fa fa-wrench"></i
-              ></span>
-              <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Customizable Event Packages
-              </h6>
-              <p style="font-family: &quot;Poppins&quot;, sans-serif">
-              Choose from a variety of event packages or build your own! Whether it's a small gathering or a large-scale celebration, Planora offers flexible options to suit every need and budget.
+              <span class="icon feature_box_col_two"><i class="fa fa-wrench"></i></span>
+              <h6>Customizable Event Packages</h6>
+              <p>
+                Choose from a variety of event packages or build your own! Whether it's a small gathering or a large-scale celebration, Planora offers flexible options to suit every need and budget.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-store"></i
-              ></span>
-              <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Service Management for Vendors
-              </h6>
-              <p style="font-family: &quot;Poppins&quot;, sans-serif">
+              <span class="icon feature_box_col_three"><i class="fa fa-store"></i></span>
+              <h6>Service Management for Vendors</h6>
+              <p>
                 For vendors, we offer a dedicated space to showcase services, manage bookings, and communicate directly with clients. It’s a powerful tool for expanding your business and reaching the right audience.
               </p>
             </div>
@@ -105,210 +94,146 @@
       </div>
     </div>
 
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-
-    <section class="counters">
-      <div
-        class="section-head-1 col-sm-12"
-        style="text-align: center; color: white"
-      >
-        <h4 style="margin-top: -5rem; color: white" id="portfolio">
-          Our Achievements at a Glance
-        </h4>
-      </div>
+    <section class="counters bg-dark text-white text-center py-5">
       <div class="container">
-         <div>
-          <i class="far fa-clock fa-4x"></i>
-          <h1>24</h1>
-          <h1>Working Hours</h1>
-        </div>
-        <div>
-          <i class="fas fa-gift fa-4x"></i>
-          <h1>1000+</h1>
-          <h1>Our Customers</h1>
-        </div>
-        <div>
-          <i class="fas fa-users fa-4x"></i>
-          <h1>50+</h1>
-          <h1>Our Clients</h1>
-             </div>
-    </section>
-
-   
-    <div class="communicate">
-      <h3>Ready to Showcase Your Business in our platform</h3>
-       <p><strong> At Cookies Tech, </strong>we're dedicated to providing the best service for our users. If you have any questions or need assistance with your account, don't hesitate to contact us.</p>
-
+        <h4 class="display-4" id="portfolio">Our Achievements at a Glance</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="far fa-clock fa-4x"></i>
+            <h1>24</h1>
+            <h1>Working Hours</h1>
           </div>
-<section id="contact" class="contact">
-      <h1 class="heading">Contact Us</h1>
-      <p style="font-size: 2rem; margin-bottom: 50px">
-      Need Help or Want to Delete Your Account?</p>
-      <p style="font-size: 2rem; margin-bottom: 50px">
-      <strong> At Cookies Tech, </strong>we're dedicated to providing the best service for our users. If you have any questions or need assistance with your account, don't hesitate to contact us.</p>
-      <p style="font-size: 2rem; margin-bottom: 50px">
-      <strong>For account deletion:</strong> If you wish to delete your account, please send an email to 
-    <a href="mailto:tech.cookies1@gmail.com">tech.cookies1@gmail.com</a> with the subject line "Account Deletion Request". Our team will review your request and respond promptly.</p>
-      <p style="font-size: 2rem; margin-bottom: 50px">
-      We value your feedback and aim to improve your experience. Feel free to reach out if you have any concerns or suggestions!</p>
+          <div class="col-md-4">
+            <i class="fas fa-gift fa-4x"></i>
+            <h1>1000+</h1>
+            <h1>Our Customers</h1>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-users fa-4x"></i>
+            <h1>50+</h1>
+            <h1>Our Clients</h1>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-   
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <section class="team" style="margin-top: 7rem">
-       <h1 class="heading" style="margin-top: 3rem" id="team">Our Team</h1>
-      <p style="font-size: 2rem; color: white; margin-bottom: 20px">
-        Our team of founding members who are the pillars of Planora
+    <section id="contact" class="contact py-5">
+      <h1 class="heading text-center">Contact Us</h1>
+      <p class="text-center" style="font-size: 1.5rem;">Need Help or Want to Delete Your Account?</p>
+      <p class="text-center" style="font-size: 1.5rem;">
+        <strong>At Cookies Tech,</strong> we're dedicated to providing the best service for our users. If you have any questions or need assistance with your account, don't hesitate to contact us.
       </p>
-      <div class="row">
-        <div class="card">
-          <div class="image">
-            <img src="./images/download.jpg" alt="Team member 1" />
-          </div>
-          <div class="info">
-            <h3>Anantha Krishnan.V</h3>
-            <span>Managing Director</span>
-            <div class="icons">
-              <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-              <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-              <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-              <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card">
-          <div class="image">
-            <img src="images/viet-woman.jpg" alt="Team member 1" />
-          </div>
-          <div class="info">
-            <h3>Sanjay Kumar</h3>
-            <span>COO</span>
-            <div class="icons">
-              <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-              <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-              <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-              <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card">
-          <div class="image">
-            <img src="./images/viet-man.jpg" alt="Team member 1" />
-          </div>
-          <div class="info">
-            <h3>Harish.N</h3>
-            <span>CEO</span>
-            <div class="icons">
-              <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-              <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-              <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-              <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+      <p class="text-center" style="font-size: 1.5rem;">
+        <strong>For account deletion:</strong> If you wish to delete your account, please send an email to <a href="mailto:tech.cookies1@gmail.com">tech.cookies1@gmail.com</a> with the subject line "Account Deletion Request". Our team will review your request and respond promptly.
+      </p>
+      <p class="text-center" style="font-size: 1.5rem;">
+        We value your feedback and aim to improve your experience. Feel free to reach out if you have any concerns or suggestions!
+      </p>
     </section>
 
-<div class="footer">
-  <div class="footer-top">
-    <div class="container">
+    <section class="team" id="team" style="margin-top: 7rem">
+      <h1 class="heading text-center" style="margin-top: 3rem">Our Team</h1>
+      <p class="text-center" style="font-size: 2rem; color: white; margin-bottom: 20px">Our team of founding members who are the pillars of Planora</p>
       <div class="row">
-
-        <!-- About Us Section -->
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>About Us</h4>
-          <ul>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="html/terms.html">Terms & Condition</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="html/privacy.html">Privacy Policy</a></li>
-          </ul>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/download.jpg" alt="Team member 1" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Anantha Krishnan.V</h3>
+              <span class="card-text">Executive Director</span>
+              <div class="icons mt-3">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Useful Links Section (Centered) -->
-        <div class="col-lg-3 col-md-6 footer-links offset-lg-3">
-          <h4>Links</h4>
-          <ul>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
-            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
-          </ul>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/download.jpg" alt="Team member 2" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Sanjay Kumar S.</h3>
+              <span class="card-text">CEO</span>
+              <div class="icons mt-3">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Contact Us Section (Right Aligned) -->
-        <div class="col-lg-3 col-md-6 footer-contact text-lg-right">
-          <h4>Contact Us</h4>
-          <p>
-            Madurai, India<br />
-            <strong>Phone:</strong> +91 9952930953<br />
-            <strong>Email:</strong> <a href="mailto:tech.cookies1@gmail.com">tech.cookies1@gmail.com</a><br />
-          </p>
+         <div class="col-md-4">
+          <div class="card">
+            <img src="./images/download.jpg" alt="Team member 2" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Harish.N</h3>
+              <span class="card-text">Director</span>
+              <div class="icons mt-3">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+          </div>
         </div>
-
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/download.jpg" alt="Team member 3" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Kishore</h3>
+              <span class="card-text">Cheif Marketing Head</span>
+              <div class="icons mt-3">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Footer Bottom Section -->
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-md-left text-center" style="color: #fff; font-size: 1.3rem;">
-          Copyright &copy; COOKIESTECH INDIA, Ltd. All Rights Reserved.
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>About Us</h4>
+                <ul>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="html/terms.html">Terms & Condition</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="html/privacy.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-links offset-lg-3">
+                <h4>Links</h4>
+                <ul>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
+                  <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-contact text-lg-right">
+                <h4>Contact Us</h4>
+                <p>Madurai, India<br /><strong>Phone:</strong> +91 9952930953<br /><strong>Email:</strong> <a href="mailto:tech.cookies1@gmail.com">tech.cookies1@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top" style="cursor: pointer;" title="Get back to the top of the page">
-    <i class="ion-ios-arrow-up"></i>
-  </a>
-</div>
-    <script>
-      $(document).ready(function () {
-        $("a").on("click", function (event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                window.location.hash = hash;
-              },
-            );
-          }
-        });
-      });
-    </script>
+    </section>
   </body>
-</html>
+</html>SS
+  
